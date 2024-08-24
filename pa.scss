@@ -1,0 +1,41 @@
+@import 'scss/main.scss';
+
+
+
+._pa-container {
+	max-width: 1260px;
+	margin: 0px auto;
+	padding: 0px 15px 0px 15px;
+	
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}
+.pa-fade{
+    animation-name: fade;
+    animation-duration: 0.5s;
+	overflow:visible;
+	visibility:visible;
+	pointer-events: all;
+}
+.pa-hide{
+    transition: all 0.1s ease 0s;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+@keyframes fade {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.pa-errorBlock{
+	color: red;
+
+}
